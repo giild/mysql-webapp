@@ -1,9 +1,11 @@
 const mysql = require('mysql')
+// replace the user and password with your local user and password
+// for database, use the name of the schema you created
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'devuser',
-    password: 'StemDatabase2022',
-    database: 'stemenrgdatabase'
+    password: '',
+    database: ''
 });
 connection.connect((error) => {
     if (error) throw error;
